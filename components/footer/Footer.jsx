@@ -2,7 +2,7 @@ import Link from "next/link";
 import Logo from "../Logo";
 import FooterColTitle from "./FooterColTitle";
 import { footerLinksCols } from "./footerLinksCols";
-import Copyright from "./CopyRight";
+import Copyright from "./Copyright";
 
 const Footer = () => {
   return (
