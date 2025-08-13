@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Car E-Commerce 🚗
 
-## Getting Started
+Hey everyone! This is an car e-commerce website I built using **Next.js 15**.  
+The goal of this project is to provide a modern, fast, and interactive shopping experience for browsing, filtering, and purchasing cars online.  
+It was a great opportunity to improve my skills with **Next.js App Router**, **server actions**, and **state management** using cookies & local storage.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Features 🚀 :
+- Fully responsive homepage with a Swiper carousel for featured cars
+- Sections for **Recommended** and **Popularity** cars
+- Shared layout across pages using `layout.js` and **nested layouts** for product filtering
+- Client-side product filtering for a better browsing experience
+- Local storage caching for products to avoid redundant API calls
+- **About** page generated with **SSG** for fast load times
+- **Contact** page with form validation and feedback using **React Hot Toast**
+- Dynamic car detail pages using `slug`
+- `generateStaticParams` to prebuild all car pages at build time
+- `generateMetadata` for SEO-friendly metadata per page
+- **Cart** and **Wishlist** pages powered by **server actions** & cookies for adding/removing cars
+- Optimized for performance with Next.js 15 App Router
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Tools I Used 🛠️ :
+- **Next.js 15** (App Router)
+- **Tailwind CSS**
+- **Swiper.js** (for carousels)
+- **React Icons**
+- **React Hot Toast**
+- **Cookies API** (via `next/headers`)
+- **Local Storage** (for caching products)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Data Handling 🧠:
+- Car data fetched from a remote API
+- Local storage used to persist products after first load
+- `generateStaticParams` for static generation of all product pages
+- `generateMetadata` for SEO on product pages
+- Cookies store cart and wishlist data, updated via server actions
+- Form validation & feedback handled server-side with real-time toast notifications
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## To Run Website
+- download repo as zip file
+- open termnal in repo folder
+- run `npm run dev`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## LIVE DEMO :
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+👉 **[Preview Website](https://your-live-demo-link.com/)**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Author 👨‍💻:
+
+Made with ❤️ by **[Hady Mohamed]**
