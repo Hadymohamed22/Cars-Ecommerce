@@ -3,7 +3,7 @@
 import { useFilters } from "@/context/FiltersContext";
 import { useState } from "react";
 
-const CustomCheckBox = ({ text, num, isChecked = false }) => {
+const CustomCheckBox = ({ text, isChecked = false }) => {
   const { setFilters } = useFilters();
   const [checked, setChecked] = useState(isChecked);
 
@@ -37,7 +37,6 @@ const CustomCheckBox = ({ text, num, isChecked = false }) => {
       />
       <span className="w-5 h-5 inline-block border-2 border-[#3563E9] rounded-md peer-checked:bg-primary peer-checked:after:rotate-[360deg] after:duration-300 peer-checked:relative peer-checked:after:content-['✓'] peer-checked:after:text-white peer-checked:after:absolute peer-checked:after:top-1/2 peer-checked:after:left-1/2 peer-checked:after:transform peer-checked:after:-translate-x-1/2 peer-checked:after:-translate-y-1/2 cursor-pointer"></span>
       <span className="text-gray-700">{text}</span>
-      <span className="num text-sm md:text-base text-para">({num})</span>
     </label>
   );
 };

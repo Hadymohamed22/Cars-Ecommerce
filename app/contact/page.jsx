@@ -2,6 +2,26 @@ import ContactData from "@/components/Contact Page/ContactData";
 import ContactForm from "@/components/Contact Page/ContactForm";
 import SubHero from "@/components/SubHero";
 
+export const metadata = {
+  title: "Contact Us | Car E-Commerce",
+  description:
+    "Get in touch with Car E-Commerce for any inquiries, support, or partnership opportunities.",
+  keywords: [
+    "Contact",
+    "Car E-Commerce",
+    "Customer Support",
+    "Help",
+    "Get in Touch",
+  ],
+  openGraph: {
+    title: "Contact Us | Car E-Commerce",
+    description:
+      "Get in touch with Car E-Commerce for any inquiries, support, or partnership opportunities.",
+    siteName: "Car E-Commerce",
+    type: "website",
+  },
+};
+
 const page = () => {
   return (
     <main>

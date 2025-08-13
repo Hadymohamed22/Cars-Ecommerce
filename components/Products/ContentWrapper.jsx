@@ -10,17 +10,17 @@ const ContentWrapper = () => {
         <div className="type">
           <h5 className="text-sm text-para mb-3">TYPE</h5>
           <div className="types flex flex-row md:flex-col items-start flex-wrap gap-3">
-            <CustomCheckBox text="All" num="11" />
-            <CustomCheckBox text="Sport" num="3" />
-            <CustomCheckBox text="SUV" num="5" />
-            <CustomCheckBox text="Hatchback" num="2" />
+            <CustomCheckBox text="All" />
+            <CustomCheckBox text="Sport" />
+            <CustomCheckBox text="SUV" />
+            <CustomCheckBox text="Hatchback" />
           </div>
         </div>
         <div className="category">
           <h5 className="text-sm text-para mb-3 mt-7">CATEGORIES</h5>
           <div className="categories flex flex-row md:flex-col items-start flex-wrap gap-3">
-            <CustomCheckBox text="manual" num="3" />
-            <CustomCheckBox text="automatic" num="5" />
+            <CustomCheckBox text="manual" />
+            <CustomCheckBox text="automatic" />
           </div>
         </div>
         <div className="price">

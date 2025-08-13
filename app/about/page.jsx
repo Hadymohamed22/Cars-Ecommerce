@@ -2,6 +2,20 @@ import ValueBox from "@/components/about page/ValueBox";
 import SubHero from "@/components/SubHero";
 import { valuesBoxs } from "@/constants/valuesBoxs";
 
+export const metadata = {
+  title: "About Us | Car E-Commerce",
+  description:
+    "Learn more about our Car E-Commerce store, our mission, and the team behind your trusted online car marketplace.",
+  keywords: ["About", "Car E-Commerce", "Our Story", "Online Car Shop", "Team"],
+  openGraph: {
+    title: "About Us | Car E-Commerce",
+    description:
+      "Learn more about our Car E-Commerce store, our mission, and the team behind your trusted online car marketplace.",
+    siteName: "Car E-Commerce",
+    type: "website",
+  },
+};
+
 const page = () => {
   return (
     <main>
