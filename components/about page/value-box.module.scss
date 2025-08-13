@@ -1,0 +1,20 @@
+.value-box {
+  .valueBoxBg {
+    clip-path: polygon(
+      0 0,
+      0 80%,
+      8% 100%,
+      100% 100%,
+      100% 20%,
+      92% 0
+    ); // default
+  }
+
+  &.even .valueBoxBg {
+    clip-path: polygon(0 0, 0 80%, 8% 100%, 100% 100%, 100% 20%, 92% 0);
+  }
+
+  &.odd .valueBoxBg {
+    clip-path: polygon(8% 0, 0 20%, 0 100%, 92% 100%, 100% 80%, 100% 0);
+  }
+}

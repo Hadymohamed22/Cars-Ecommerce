@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #3563E9;
+  --color-primaryLight: #658DF1;
+  --color-primaryDark: #658DF1;
+  --color-secondary: #1A202C;
+  --color-para: #90A3BF;
+}
+
+@layer components{
+  .elements-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@layer components{
+  .para-styles{
+    @apply text-xs md:text-sm text-[#13131399]
+  }
+}
