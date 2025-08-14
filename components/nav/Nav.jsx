@@ -3,6 +3,7 @@ import profileImage from "@/assets/images/profile-photo.png";
 import NavLinks from "./NavLinks";
 import Logo from "../Logo";
 import WishlistCart from "../WishlistCart";
+import React from "react";
 
 const Nav = () => {
   return (
@@ -11,9 +12,10 @@ const Nav = () => {
         <div className="logo">
           <Logo />
         </div>
+        <WishlistCart classname="flex md:hidden" />
         <NavLinks />
         <div className="wishlist-cart-profile hidden md:flex items-center gap-3">
-          <WishlistCart />
+          <WishlistCart classname="hidden md:flex" />
           <div className="profile relative w-8 h-8 md:w-9 md:h-9 rounded-full border border-gray-400 text-[#596780] overflow-hidden">
             <Image
               src={profileImage}

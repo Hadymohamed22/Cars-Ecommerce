@@ -2,11 +2,11 @@ import { getWishlist } from "@/actions/getWishlist";
 import UserProcessIconBox from "./nav/UserProcessIconBox";
 import { getCart } from "@/actions/getCart";
 
-const WishlistCart = async () => {
+const WishlistCart = async ({ classname = "" }) => {
   let wishlist = await getWishlist();
   let cart = await getCart();
   return (
-    <div className="wishlist-cart hidden md:flex items-center gap-3">
+    <div className={`${classname} wishlist-cart items-center gap-3`}>
       <UserProcessIconBox
         icon="wishlist"
         link="/wishlist"
